@@ -17,7 +17,7 @@ export function getVideoTracks(bookTitle: string): VideoTrack[] {
       const filename = parts.at(-1) ?? ''
       const book = parts[3] ?? ''
       const group = parts[4] ?? ''
-      const isEpisode = normalize(group) === 'episodes' || normalize(group) === 'files'
+      const isEpisode = normalize(group) === 'colloquialenglish' || normalize(group) === 'files'
 
       return {
         id: path,
